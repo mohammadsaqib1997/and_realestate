@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCE9EC"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="16dp"
+            android:textColor="#1B6EDE"
+            android:text="AREA" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="21dp"
+            android:textColor="#1B6EDE"
+            android:text="Max Area"
+            android:layout_below="@+id/textView10"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/editText14"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_alignStart="@+id/textView15"
+            android:layout_marginStart="16dp"
+            android:layout_below="@+id/textView15"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:textColor="#1B6EDE"
+            android:layout_marginStart="16dp"
+            android:text="Min Area"
+            android:layout_below="@+id/editText14"
+            android:layout_alignStart="@+id/editText15" />
+
+        <EditText
+            android:id="@+id/editText15"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_alignStart="@+id/textView15"
+            android:layout_marginStart="16dp"
+            android:layout_below="@+id/textView15"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText15"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:layout_marginStart="16dp"
+            android:textColor="#1B6EDE"
+            android:text="UNIT" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Square Feet"
+            android:layout_below="@+id/textView14"
+            android:layout_alignParentStart="true" />
+
+        <CheckBox
+            android:id="@+id/checkBox15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_below="@+id/checkBox"
+            android:layout_marginTop="13dp"
+            android:text="Square MEters" />
+
+        <CheckBox
+            android:id="@+id/checkBox16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_alignStart="@+id/checkBox15"
+            android:layout_below="@+id/checkBox15"
+            android:layout_marginTop="11dp"
+            android:text="Square Yards" />
+
+        <CheckBox
+            android:id="@+id/checkBox17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_alignEnd="@+id/checkBox16"
+            android:layout_below="@+id/checkBox16"
+            android:layout_marginTop="9dp"
+            android:text="Marla" />
+
+        <CheckBox
+            android:id="@+id/checkBox18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_alignEnd="@+id/checkBox17"
+            android:layout_below="@+id/checkBox17"
+            android:layout_marginTop="11dp"
+            android:text="Kanal" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/textColorPrimary"
+            android:text="Search" />
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
