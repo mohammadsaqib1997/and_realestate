@@ -12,31 +12,40 @@
         <activity
             android:name=".SplashScreen"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SecondScreen"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".MobileVerification"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".PropertySubmit"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Signup"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".SaleSubmitProperty"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".IconTextTabsActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".SearchProperty"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ProfilePage"
-            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SecondScreen"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".MobileVerification"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".PropertySubmit"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Signup"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".SaleSubmitProperty"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".IconTextTabsActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".SearchProperty"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".ProfilePage"
+            android:theme="@style/NoActionBar" />
     </application>
 
 </manifest>

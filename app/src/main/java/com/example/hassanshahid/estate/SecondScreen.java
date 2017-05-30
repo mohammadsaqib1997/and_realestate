@@ -1,11 +1,8 @@
 package com.example.hassanshahid.estate;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
-import android.support.design.widget.Snackbar;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -15,15 +12,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
-
-/**
- * Created by Hassan Shahid on 5/17/2017.
- */
 
 public class SecondScreen extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-    Button t1,t2;
+
+    Button t1, t2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,7 +29,7 @@ public class SecondScreen extends AppCompatActivity
         t1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent it = new Intent(SecondScreen.this,MobileVerification.class);
+                Intent it = new Intent(SecondScreen.this, MobileVerification.class);
                 startActivity(it);
             }
         });
@@ -43,25 +37,15 @@ public class SecondScreen extends AppCompatActivity
         t2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent it = new Intent(SecondScreen.this,IconTextTabsActivity.class);
+                Intent it = new Intent(SecondScreen.this, IconTextTabsActivity.class);
                 startActivity(it);
             }
         });
-//        setSupportActionBar(toolbar);
-
-//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.setDrawerListener(toggle);
+        drawer.addDrawerListener(toggle);
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
@@ -107,11 +91,11 @@ public class SecondScreen extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
-            Intent myintent = new Intent(SecondScreen.this,MobileVerification.class);
+            Intent myintent = new Intent(SecondScreen.this, MobileVerification.class);
             startActivity(myintent);
             return false;
         } else if (id == R.id.nav_gallery) {
-            Intent myintent = new Intent(SecondScreen.this,IconTextTabsActivity.class);
+            Intent myintent = new Intent(SecondScreen.this, IconTextTabsActivity.class);
             startActivity(myintent);
             return false;
 
@@ -123,9 +107,9 @@ public class SecondScreen extends AppCompatActivity
 
         } else if (id == R.id.contact_us) {
 
-        }else if (id == R.id.about_us) {
+        } else if (id == R.id.about_us) {
 
-        }else if (id == R.id.logout) {
+        } else if (id == R.id.logout) {
 
         }
 

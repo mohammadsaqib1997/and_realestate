@@ -9,13 +9,8 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
-import com.example.hassanshahid.estate.fragments.FiveFragment;
-import com.example.hassanshahid.estate.fragments.FourFragment;
-import com.example.hassanshahid.estate.fragments.OneFragment;
 import com.example.hassanshahid.estate.fragments.PropertyFirst;
 import com.example.hassanshahid.estate.fragments.Propertysecond;
-import com.example.hassanshahid.estate.fragments.ThreeFragment;
-import com.example.hassanshahid.estate.fragments.TwoFragment;
 
 import java.util.ArrayList;
 import java.util.List;

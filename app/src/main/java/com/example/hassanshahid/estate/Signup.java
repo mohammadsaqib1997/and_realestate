@@ -1,17 +1,12 @@
 package com.example.hassanshahid.estate;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-/**
- * Created by Hassan Shahid on 5/18/2017.
- */
-
-public class Signup extends Activity {
+public class Signup extends AppCompatActivity {
     Button t1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +17,7 @@ public class Signup extends Activity {
         t1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent it = new Intent(Signup.this,PropertySubmit.class);
+                Intent it = new Intent(Signup.this, PropertySubmit.class);
                 startActivity(it);
             }
         });
