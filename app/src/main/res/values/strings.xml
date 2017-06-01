@@ -201,4 +201,5 @@
     <string name="for_sale">For Sale</string>
     <string name="gulistan_e_jouhar">Gulistan-e-Jouhar</string>
     <string name="add_property">ADD PROPERTY</string>
+    <string name="title_activity_check_map">Map</string>
 </resources>
